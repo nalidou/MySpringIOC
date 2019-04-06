@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans">
+    <bean id="sclass" class="com.wzy.spring.simple.ioc.test.StudentClass">
+        <property name="cid" value="0x0012" />
+        <property name="cname" value="计算机1班" />
+    </bean>
+
+    <bean id="student" class="com.wzy.spring.simple.ioc.test.Student">
+        <property name="sid" value="0x23"/>
+        <property name="sname" value="tom"/>
+        <property name="sclass" ref="sclass"/>
+    </bean>
+
+</beans>
